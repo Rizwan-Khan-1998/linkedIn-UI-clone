@@ -3,24 +3,25 @@
 @tailwind utilities;
 
 @layer components {
-    .menu-link {
-        @apply  flex flex-col justify-center items-center min-w-20 h-full opacity-70 hover:opacity-100
-    }
+  .menu-link {
+    @apply flex flex-col justify-center items-center min-w-20 h-full opacity-70 hover:opacity-100;
+  }
 
-    a.active {
-        @apply  opacity-100 border-b-2 border-black !important;
-    }
-    .container{
-        @apply max-w-[1128px] w-screen;
-    }
-    .page-layout {
-        @apply flex m-auto;
-    }
+  a.active {
+    @apply opacity-100 border-b-2 border-black !important;
+  }
+  .container {
+    @apply max-w-[1128px] w-screen;
+  }
+  .page-layout {
+    @apply flex m-auto flex-wrap;
+  }
 
-    .bottom-row-button {
-        @apply flex justify-center items-center gap-2 p-2 ;
-    }
+  .bottom-row-button {
+    @apply flex justify-center items-center gap-2 p-2;
+  }
 
+<<<<<<< HEAD
 
     .post-action-button {
         @apply flex items-center justify-center gap-2 hover:bg-gray-100 rounded-lg grow px-1 py-2;
@@ -28,5 +29,23 @@
     .post-action-button-img {
         @apply w-6 h-6;
     }
+    .write-action--img {
+        @apply w-6 h-6 ;
+    }
 
 }
+=======
+  .post-action-button {
+    @apply flex items-center justify-center gap-2 hover:bg-gray-100 rounded-lg grow px-1 py-2 flex-wrap;
+  }
+  .post-action-button-img {
+    @apply w-6 h-6;
+  }
+  .write-action--img {
+    @apply w-6 h-6;
+  }
+  .header-on-mobile {
+    @apply max-[768px]:fixed bottom-0 left-0;
+  }
+}
+>>>>>>> 7b14bed (responsive)

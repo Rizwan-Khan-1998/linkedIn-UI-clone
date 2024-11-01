@@ -14,7 +14,7 @@ function MenuLink({ to, image, imageActive, title }) {
             alt={title}
             className="nav-link m-auto w-6 h-6"
           />
-          <h1 className="text-xs">{title}</h1>
+          <h1 className="text-xs hidden lg:block">{title}</h1>
         </>)
       }}
     </NavLink>

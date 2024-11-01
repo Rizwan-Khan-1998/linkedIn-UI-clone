@@ -2,7 +2,7 @@ import MenuLink from "./MenuLink";
 
 function NavLinks() {
   return (
-    <div className="flex gap-3 ">
+    <div className="flex gap-3 header-on-mobile ">
       <MenuLink
         to="/"
         imageActive="images/activeHome.png"

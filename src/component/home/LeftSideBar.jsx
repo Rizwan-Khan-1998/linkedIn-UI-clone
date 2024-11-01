@@ -4,7 +4,7 @@ import ProfileInfoCard from "./ProfileInfoCard";
 
 function LeftSideBar() {
   return ( 
-    <div className="w-[225px] rounded-lg" >
+    <div className=" rounded-lg w-full sm:w-[225px] " >
       <ProfileInfoContainer />
     </div>
    );
