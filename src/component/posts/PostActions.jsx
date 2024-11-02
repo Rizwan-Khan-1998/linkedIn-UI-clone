@@ -12,19 +12,11 @@ function PostActions({ handleLikeUpdate , setLiked, liked }) {
         <img src={!liked ? "images/like-action.svg" : "images/liked-btn.svg"} alt="like" className="post-action-button-img"  />
         <span>Likes</span>
       </button>
-<<<<<<< HEAD
       <button className="post-action-button">
         <img src="images/post-action-comments.png" alt="comments" className="post-action-button-img" />
         <span>Comments</span>
       </button>
       <button className="post-action-button">
-=======
-      <button className="post-action-button ">
-        <img src="images/post-action-comments.png" alt="comments" className="post-action-button-img" />
-        <span>Comments</span>
-      </button>
-      <button className="post-action-button ">
->>>>>>> 7b14bed (responsive)
         <img src="images/post-action-repost.png" alt="reposts"  className="post-action-button-img" />
         <span>Reposts</span>
       </button>

@@ -12,10 +12,7 @@ function Post({ post }) {
     <div className="w-100 bg-white mb-2 rounded`-lg border  border-gray-300">
       <PostProfile data={post.user} />
       <PostContent text={post.post_content} />
-<<<<<<< HEAD
       <PostMedia media={post.post_media_content} />
-=======
->>>>>>> 7b14bed (responsive)
       <PostFooter
         likes={post.likes}
         comments={post.comments}

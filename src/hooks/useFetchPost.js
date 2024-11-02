@@ -22,14 +22,6 @@ const useFetchPost = () => {
           posts.map(async (post) => {
             const userRef = post.user; // Assuming this is a reference to the user document
             const userSnap = await getDoc(userRef);
-<<<<<<< HEAD
-            const mediaRef = ref(storage, post.post_media_content); // Assuming post_media_content stores the path
-            const downloadURL = await getDownloadURL(mediaRef).catch((error) => {
-              console.error("Error getting download URL: ", error);
-              return null; // Return null if there's an error
-            });
-=======
->>>>>>> 7b14bed (responsive)
             const userData = userSnap.exists() ? userSnap.data() : null;
             const profilePicPath = userSnap.exists() ? userSnap.data().profile_pic : null;
             console.log(profilePicPath);
@@ -44,10 +36,6 @@ const useFetchPost = () => {
             return {
               ...post,
               user: userWithProfilePic,
-<<<<<<< HEAD
-              post_media_content: downloadURL,
-=======
->>>>>>> 7b14bed (responsive)
               
             };
           })
