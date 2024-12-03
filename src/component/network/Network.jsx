@@ -1,6 +1,9 @@
 function Network () {
-    return ( 
+    return ( <div className="empty-page">
+
+
         <h1>Network</h1>
+    </div>
      );
 }
 

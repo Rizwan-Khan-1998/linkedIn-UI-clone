@@ -3,9 +3,8 @@ import { useState } from "react";
 
 export default function Messages() {
   return (
-    <div>
-      <TopHeadMessges />;
-    </div>
+      <TopHeadMessges />
+    
   );
 }
 
@@ -15,7 +14,7 @@ function TopHeadMessges() {
     setToggle(!toggle);
   }
   return (
-    <div className={` transition-all duration-500 ease-in-out flex flex-col fixed bottom-0 right-[5%]  rounded-t-lg border  border-gray-300 p-2 bg-white 
+    <div className={` transition-all duration-500 ease-in-out flex flex-col fixed bottom-0 right-[3%]  rounded-t-lg border  border-gray-300 p-2 bg-white 
       hidden sm:block
     `}>
       <div
@@ -37,11 +36,11 @@ function TopHeadMessges() {
           <img src="images/msg-open.svg" alt="" className="w-4 h-4" />
         </div>
       </div>
-      {toggle ? <MessageBoxes /> : ""}
+      {toggle ? <MessageBoxes /> : null}
     </div>
   );
 }
 
 function MessageBoxes() {
-  return <div className="h-[500px] "></div>;
+  return <div className="h-[500px] "></div>
 }

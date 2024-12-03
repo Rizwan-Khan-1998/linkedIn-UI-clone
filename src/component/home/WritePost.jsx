@@ -114,7 +114,7 @@ function WritePostContainer() {
   const handleClose = () => setShow(false);
 
   return (
-    <div className="bg-white rounded-xl border-2 border-gray-200 py-2">
+    <div className="bg-white rounded-xl border-2 border-gray-200 py-2 hidden sm:block">
       <TopRowOfWritePost handleOpen={handleOpen} />
       <BottomRowOfWritePost handleOpen={handleOpen} />
       {show && (

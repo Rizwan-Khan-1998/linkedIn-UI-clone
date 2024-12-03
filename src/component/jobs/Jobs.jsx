@@ -1,6 +1,9 @@
 function Jobs () {
     return ( 
-        <h1>Jobs</h1>
+        <div className="empty-page">
+
+            <h1>Jobs</h1>
+        </div>
      );
 }
 

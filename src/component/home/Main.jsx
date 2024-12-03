@@ -8,7 +8,7 @@ function Main() {
 
  
   return (
-    <div className=" w-full sm:w-1/2 h-screen ">
+    <div className="col-span-12 lg:col-span-6 md:col-start-4 md:col-end-10">
       <UserInfoProvider>
         <WritePostContainer  />
       </UserInfoProvider>
